@@ -1,21 +1,28 @@
-import { Outlet, useNavigate } from "react-router-dom";
-import cafeteriaLogo from "../../images/logo.png";
+import { Outlet } from "react-router-dom";
 import styles from "./NavComponentsCss.module.css";
 
-export default function NavComponent() {
-    const navigate = useNavigate();
-
+function NavParaPaginaHome() {
     return (
         <>
-            <nav className={styles.containerPai}>
-                <img src={cafeteriaLogo} alt="logo" className={styles.logo} />
-                <div className={styles.containerFilho}>
-                    <a href="" onClick={() => navigate('/')} className={styles.link}>HOME</a>
-                    <a href="" className={styles.link}>ABOUT US</a>
-                </div>
+            <nav className={styles.containerNav}>
+                <a className={styles.nomeLogo}>Cafeteria Phelipe</a>
             </nav>
+            <Outlet />
+        </>
 
+    );       
+};
+
+function NavParaPaginaPedido() {
+    return (
+        <>
+            <nav className={styles.containerNavPedido}>
+                <a className={styles.nomeLogo}>Cafeteria Phelipe</a>
+                <button className={styles.botaoDePedidos}>Meus Pedidos <a>(0)</a></button>
+            </nav>
             <Outlet />
         </>
     )
-};
+}
+
+export { NavParaPaginaHome, NavParaPaginaPedido };

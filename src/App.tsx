@@ -1,15 +1,15 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from "react-router-dom"
 import HomePage from "./pages/Home/HomePage"
-import AboutPage from "./pages/About/AboutPage";
-import NavComponent from "./components/navBar/NavComponent"
+import {NavParaPaginaHome, NavParaPaginaPedido} from "./components/navBar/NavComponent"
 import './App.css';
-
+import PedidoPage from "./pages/Pedido/PedidoPage";
+import CancelarOuFinalizarPedido from "./components/cancelarOuFinalizarPedido/cancelarOuFinalizarPedido";
 
 const browserRoutes = createBrowserRouter(createRoutesFromElements(
   <Route>
-    <Route path="/" element={<NavComponent />}>
-      <Route index element={<HomePage />} />
-      <Route path="about" element={<AboutPage />} />
+    <Route path="/">
+      <Route index element={<> <NavParaPaginaHome/>  <HomePage /> </>} /> 
+      <Route path="pedir" element={<> <NavParaPaginaPedido/> <PedidoPage/>   <CancelarOuFinalizarPedido/> </>} />
     </Route>
   </Route>
 ));
