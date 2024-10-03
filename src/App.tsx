@@ -3,20 +3,31 @@ import HomePage from "./pages/Home/HomePage"
 import {NavParaPaginaHome, NavParaPaginaPedido} from "./components/navBar/NavComponent"
 import './App.css';
 import PedidoPage from "./pages/Pedido/PedidoPage";
-import CancelarOuFinalizarPedido from "./components/cancelarOuFinalizarPedido/cancelarOuFinalizarPedido";
+import { useSelector } from "react-redux";
+import SectionPedidos from "./components/cart-item/SectionPedidos";
 
 const browserRoutes = createBrowserRouter(createRoutesFromElements(
   <Route>
     <Route path="/">
       <Route index element={<> <NavParaPaginaHome/>  <HomePage /> </>} /> 
-      <Route path="pedir" element={<> <NavParaPaginaPedido/> <PedidoPage/>   <CancelarOuFinalizarPedido/> </>} />
+      <Route path="pedir" element={<> <NavParaPaginaPedido /> <PedidoPage /> </>} />
     </Route>
   </Route>
 ));
 
 function App() {
+      interface RootState {
+        itensSelecionados: string[];
+        itensSelecionadosLength: number;
+        verMeusPedidos: boolean;
+    }
+  const store = useSelector((state: RootState) => state);
   return (
+    <>
+      {store.verMeusPedidos ? <SectionPedidos /> : null}      
+
       <RouterProvider router={browserRoutes} />
+    </>
 )
 }
 

@@ -27,6 +27,10 @@
     padding-left: 5vh;
 }
 
+.nomeLogo:hover {
+    cursor: pointer;
+}
+
 .carrinho {
     height: 3rem;
     width: 3rem;
