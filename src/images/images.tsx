@@ -1,4 +1,4 @@
-import cafeEspresso from './itens-para-venda/café-espresso.jpg'
+import cafeExpresso from './itens-para-venda/café-espresso.jpg'
 import cafeCoado from './itens-para-venda/café-coado.jpg'
 import cafeMacchiato from './itens-para-venda/café-macchiato.jpg'
 import cafeMocha from './itens-para-venda/café-mocha.png'
@@ -20,6 +20,6 @@ import muffins from './itens-para-venda/muffins.jpeg'
 import paoDeQueijo from './itens-para-venda/pão-de-queijo.jpeg'
 
 export {
-    cafeEspresso, cafeCoado, cafeMacchiato, cafeMocha, cappucino, chocolateQuente, chaDeErvas, chaPreto, sucoDeManga,
+    cafeExpresso, cafeCoado, cafeMacchiato, cafeMocha, cappucino, chocolateQuente, chaDeErvas, chaPreto, sucoDeManga,
     sucoDeAcerola, sucoDeUva, tortaDeMaca, boloDeCenoura, sanduicheQuente, sanduicheFrio, cookies, croissant, donuts, muffins, paoDeQueijo
 };
