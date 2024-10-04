@@ -1,5 +1,5 @@
 import {
-    cafeExpresso, cafeCoado, cafeMacchiato, cafeMocha, cappucino, chocolateQuente, chaDeErvas, chaPreto, sucoDeManga,
+    cafeEspresso, cafeCoado, cafeMacchiato, cafeMocha, cappucino, chocolateQuente, chaDeErvas, chaPreto, sucoDeManga,
     sucoDeAcerola, sucoDeUva, tortaDeMaca, boloDeCenoura, sanduicheQuente, sanduicheFrio, cookies, croissant, donuts, muffins, paoDeQueijo
 } from '../../images/images';
 import styles from './styles.module.css';
@@ -27,22 +27,22 @@ export default function PedidoPage() {
         <div>
             <main>
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={cafeExpresso} alt="cafeExpresso" className={styles.imagens} />
+                    <img src={cafeEspresso} alt="café expresso" className={styles.imagens} />
                     <figcaption>Café Expresso</figcaption>
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={cafeCoado} alt="cafeCoado" className={styles.imagens} />
+                    <img src={cafeCoado} alt="café coado" className={styles.imagens} />
                     <figcaption>Café Coado</figcaption>
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={cafeMacchiato} alt="cafeMacchiato" className={styles.imagens} />
+                    <img src={cafeMacchiato} alt="café macchiato" className={styles.imagens} />
                     <figcaption>Café Macchiato</figcaption>
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={cafeMocha} alt="cafeMocha" className={styles.imagens} />
+                    <img src={cafeMocha} alt="café mocha" className={styles.imagens} />
                     <figcaption>Café Mocha</figcaption>                
                 </figure>
 
@@ -52,52 +52,52 @@ export default function PedidoPage() {
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={chocolateQuente} alt="chocolateQuente" className={styles.imagens} />
+                    <img src={chocolateQuente} alt="chocolate quente" className={styles.imagens} />
                     <figcaption>Chocolate Quente</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={chaDeErvas} alt="chaDeErvas" className={styles.imagens} />
+                    <img src={chaDeErvas} alt="chá de ervas" className={styles.imagens} />
                     <figcaption>Chá de Ervas</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={chaPreto} alt="chaPreto" className={styles.imagens} />
+                    <img src={chaPreto} alt="chá preto" className={styles.imagens} />
                     <figcaption>Chá Preto</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={sucoDeManga} alt="sucoDeManga" className={styles.imagens} />
+                    <img src={sucoDeManga} alt="suco de manga" className={styles.imagens} />
                     <figcaption>Suco de Manga</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={sucoDeAcerola} alt="sucoDeAcerola" className={styles.imagens} />
+                    <img src={sucoDeAcerola} alt="suco de acerola" className={styles.imagens} />
                     <figcaption>Suco de Acerola</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={sucoDeUva} alt="sucoDeUva" className={styles.imagens} />
+                    <img src={sucoDeUva} alt="suco de uva" className={styles.imagens} />
                     <figcaption>Suco de Uva</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={tortaDeMaca} alt="tortaDeMaca" className={styles.imagens} />
+                    <img src={tortaDeMaca} alt="torta de maca" className={styles.imagens} />
                     <figcaption>Torta de Maça</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={boloDeCenoura} alt="boloDeCenoura" className={styles.imagens} />
+                    <img src={boloDeCenoura} alt="bolo de cenoura" className={styles.imagens} />
                     <figcaption>Bolo de Cenoura</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={sanduicheQuente} alt="sanduicheQuente" className={styles.imagens} />
+                    <img src={sanduicheQuente} alt="sanduiche quente" className={styles.imagens} />
                     <figcaption>Sanduíche Quente</figcaption>                
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={sanduicheFrio} alt="sanduicheFrio" className={styles.imagens} />
+                    <img src={sanduicheFrio} alt="sanduiche frio" className={styles.imagens} />
                     <figcaption>Sanduíche Frio</figcaption>                
                 </figure>
 
@@ -122,7 +122,7 @@ export default function PedidoPage() {
                 </figure>
 
                 <figure onClick={AdicionarAoCarrinho}>
-                    <img src={paoDeQueijo} alt="pãoDeQueijo" className={styles.imagens} />
+                    <img src={paoDeQueijo} alt="pão de queijo" className={styles.imagens} />
                     <figcaption>Pão de Queijo</figcaption>                
                 </figure>
             </main>
