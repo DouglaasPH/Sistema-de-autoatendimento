@@ -3,10 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     pedidos: "",
     cancelarPedidos: 0,
-    meusPedidos: false
+    meusPedidos: false,
+    decrementarPedido: 0
 };
 
-const pedidoSlice = createSlice({
+const incrementarPedidoSlice = createSlice({
     name: "pedidos",
     initialState,
     reducers: {
@@ -15,6 +16,16 @@ const pedidoSlice = createSlice({
         }
     }
 })
+
+const decrementarPedidoSlice = createSlice({
+    name: "pedidos",
+    initialState,
+    reducers: {
+        decrementarPedido: (state, action) => {
+            state.pedidos = action.payload;
+        }
+    }
+});
 
 const cancelarPedidoSlice = createSlice({
     name: "pedidos",
@@ -36,7 +47,8 @@ const meusPedidosSlice = createSlice({
     }
 })
 
-export const { addPedido } = pedidoSlice.actions;
+export const { addPedido } = incrementarPedidoSlice.actions;
+export const { decrementarPedido } = decrementarPedidoSlice.actions;
 export const { cancelPedido } = cancelarPedidoSlice.actions;
 export const { verMeusPedidos } = meusPedidosSlice.actions;
-export default pedidoSlice.reducer;
+export default incrementarPedidoSlice.reducer;

@@ -19,7 +19,31 @@ import donuts from './itens-para-venda/donuts.jpeg'
 import muffins from './itens-para-venda/muffins.jpeg'
 import paoDeQueijo from './itens-para-venda/pão-de-queijo.jpeg'
 
-export {
-    cafeExpresso, cafeCoado, cafeMacchiato, cafeMocha, cappucino, chocolateQuente, chaDeErvas, chaPreto, sucoDeManga,
-    sucoDeAcerola, sucoDeUva, tortaDeMaca, boloDeCenoura, sanduicheQuente, sanduicheFrio, cookies, croissant, donuts, muffins, paoDeQueijo
-};
+interface tipoDasImagens {
+    [chave: string]: string
+};    
+    
+const imagens: tipoDasImagens = {
+    cafeExpresso,
+    cafeCoado,
+    cafeMacchiato,
+    cafeMocha,
+    cappucino,
+    chocolateQuente,
+    chaDeErvas,
+    chaPreto,
+    sucoDeManga,
+    sucoDeAcerola,
+    sucoDeUva,
+    tortaDeMaca,
+    boloDeCenoura,
+    sanduicheQuente,
+    sanduicheFrio,
+    cookies,
+    croissant,
+    donuts,
+    muffins,
+    paoDeQueijo    
+}
+
+export { imagens };
