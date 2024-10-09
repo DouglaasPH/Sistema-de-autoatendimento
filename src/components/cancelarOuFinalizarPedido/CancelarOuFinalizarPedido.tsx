@@ -20,10 +20,19 @@ function CancelarOuFinalizarPedido() {
             }, 800);
         }
     }
+
+    function finalizarPedido() {
+        if (store.itensSelecionadosLength > 0) {
+            setTimeout(() => {
+                navigate('/finalizarPedido')
+            }, 800);
+        }
+    }        
+
     return (
         <>
             <div className={styles.div}>
-                <button className={styles.button}>Finalizar Pedido</button>
+                <button className={styles.button} onClick={finalizarPedido}>Finalizar Pedido</button>
                 <button className={styles.button} onClick={cancelarPedido}>Cancelar Pedido</button>
             </div>
         </>

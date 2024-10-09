@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.conteudoPrincipal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.divUm {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.artigoDeItens {
+    background-color: #eee1d5;
+    margin: 0;
+    padding: 0;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.subtituloParaSecao {
+    margin: 0.8rem 0 0 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.pedidos {
+    margin: 0 1.5rem 0 1.5rem;
+    border-bottom: 2px solid #DDB892;
+    display: flex;
+}
+
+.quantidade, .tipo, .preco {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;    
+}
+
+.quantidade {
+    font-weight: 400;
+}
+
+.tipo {
+    margin-left: 1rem;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.preco {
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 0.3rem;
+}
+
+
+.artigoDeInformacoes {
+    margin: 0;
+    padding: 0;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sectionNumeroDeMesa, .secitonMaisInfo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #eee1d5;
+    height: 12rem;
+    gap: 1rem;
+}
+
+
+
+fieldset {
+    display: flex;
+    border: none;
+    position: relative;
+    width: 95%;
+    height: 300%;
+    margin-left: 1rem;
+}
+
+label {
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    padding: 0 2px;
+    background-color: #eee1d5;
+    border-radius: 80px;
+    font-weight: 100;
+    color: #885a2d;
+    font-size: 12px;
+}
+
+input {
+    width: 100%;
+    height: 80%;
+    border: 2px #885a2d solid;
+    border-radius: 40px;
+    background-color: #eee1d5;
+    text-indent: 25px;
+}
+
+.divDois {
+    display: flex;
+    gap: 2rem;
+}
+
+.botao {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
+    height: 2.5rem;
+    width: 20rem;
+    background-color: #43281c;
+    color: #eee1d5;
+    border-radius: 1rem;
+}
+
+.botao:first-child:hover {
+    cursor: pointer;
+    background-color: #009d00;
+}
+
+.botao:last-child:hover {
+    cursor: pointer;
+    background-color: #ff2727;
+}
+
+.botao:first-child:active {
+    background: #008900;
+}
+
+.botao:last-child:active {
+    background: #ff1414;
+}

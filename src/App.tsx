@@ -5,12 +5,14 @@ import './App.css';
 import PedidoPage from "./pages/Pedido/PedidoPage";
 import { useSelector } from "react-redux";
 import SectionPedidos from "./components/cart-item/SectionPedidos";
-
+import FinalizarPedidoPage from "./pages/Finalizar Pedido/FinalizarPedidoPage";
+  
 const browserRoutes = createBrowserRouter(createRoutesFromElements(
   <Route>
     <Route path="/">
-      <Route index element={<> <NavParaPaginaHome/>  <HomePage /> </>} /> 
+      <Route index element={<> <NavParaPaginaHome />  <HomePage /> </>} /> 
       <Route path="pedir" element={<> <NavParaPaginaPedido /> <PedidoPage /> </>} />
+      <Route path="finalizarPedido" element={<> <NavParaPaginaHome /> <FinalizarPedidoPage /> </>} />
     </Route>
   </Route>
 ));
